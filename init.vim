@@ -124,6 +124,7 @@ nnoremap <C-H>      :NERDTreeToggle<CR>
 nnoremap <Leader>h  :NERDTreeToggle<CR>
 
 " Terminal stuff
+tnoremap <A-c> <C-\><C-n>
 tnoremap <A-w> <C-\><C-n><C-w>
 tnoremap <A-h> <A-w>h
 tnoremap <A-j> <A-w>j
@@ -134,3 +135,12 @@ nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>h
 nnoremap <A-l> <C-w>l
+
+inoremap <A-w> <ESC><C-w>
+inoremap <A-h> <ESC><C-w>h
+inoremap <A-j> <ESC><C-w>j
+inoremap <A-k> <ESC><C-w>k
+inoremap <A-l> <ESC><C-w>l
+
+nnoremap [ {
+nnoremap ] }

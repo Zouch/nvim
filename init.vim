@@ -7,6 +7,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'qpkorr/vim-bufkill'
+Plug 'terryma/vim-multiple-cursors'
 " }
 call plug#end()
 
@@ -126,21 +128,12 @@ nnoremap <Leader>h  :NERDTreeToggle<CR>
 " Terminal stuff
 tnoremap <A-c> <C-\><C-n>
 tnoremap <A-w> <C-\><C-n><C-w>
-tnoremap <A-h> <A-w>h
-tnoremap <A-j> <A-w>j
-tnoremap <A-k> <A-w>k
-tnoremap <A-l> <A-w>l
 nnoremap <A-w> <C-w>
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>h
-nnoremap <A-l> <C-w>l
 
 inoremap <A-w> <ESC><C-w>
-inoremap <A-h> <ESC><C-w>h
-inoremap <A-j> <ESC><C-w>j
-inoremap <A-k> <ESC><C-w>k
-inoremap <A-l> <ESC><C-w>l
+
+nnoremap <A-k>      :BD<cr>
+nnoremap <Leader>k  :BD<cr>
 
 nnoremap [ {
 nnoremap ] }

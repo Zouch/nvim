@@ -9,6 +9,12 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'qpkorr/vim-bufkill'
 Plug 'terryma/vim-multiple-cursors'
+
+" Swap between cpp and hpp
+Plug 'vim-scripts/a.vim'
+
+Plug 'Valloric/YouCompleteMe'
+Plug 'rdnetto/YCM-Generator'
 " }
 call plug#end()
 
